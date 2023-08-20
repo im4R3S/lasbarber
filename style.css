@@ -1,0 +1,75 @@
+/* GENERAL */
+body, html {scroll-behavior: smooth !important;box-sizing:border-box;width: 100%;font-family: "Nunito", sans-serif!important;background-color: white !important;color:black!important;margin:0;}
+section{height: 100vh; width: 100vw;}
+
+/* UTILS */
+section{height: 100vh !important;}
+.underline {box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);text-decoration: none;color: white;}
+
+/* HEADER */
+.header {background-color: white; box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1); width: 100%; position: fixed; z-index: 1;}
+.header ul {margin: 0;padding: 0;list-style: none;overflow: hidden;background-color: white;}
+.header li a {display: block;padding: 15px 15px;text-decoration: none;color: black;transition: 0.3s;}
+.header li a:hover,.header .menu-btn:hover {color: #686868}
+
+/* NAVBAR */
+.header .menu {clear: both;max-height: 0;transition: max-height .2s ease-out;}
+.header .menu-icon {cursor: pointer;display: inline-block;float: right;padding: 28px 20px;position: relative;user-select: none;}
+.header .menu-icon .navicon {background: black;display: block;height: 2px;position: relative;transition: background .2s ease-out;width: 18px;}
+.header .menu-icon .navicon:before,.header .menu-icon .navicon:after {background: black;content: '';display: block;height: 100%;position: absolute;transition: all .2s ease-out;width: 100%;}
+.header .menu-icon .navicon:before {top: 5px;}
+.header .menu-icon .navicon:after {top: -5px;}
+.header .menu-btn {display: none;}
+.header .menu-btn:checked ~ .menu {max-height: 300px;}
+.header .menu-btn:checked ~ .menu-icon .navicon {background: transparent;}
+.header .menu-btn:checked ~ .menu-icon .navicon:before {transform: rotate(-45deg);}
+.header .menu-btn:checked ~ .menu-icon .navicon:after {transform: rotate(45deg);}
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {top: 0;}
+@media (min-width: 55em) {
+    .header li {float: left;}
+    .header li a {padding: 20px 25px;}
+    .header .menu {clear: none;float: right;max-height: none;}
+    .header .menu-icon {display: none;}
+    .header li a:hover,.header .menu-btn:hover {transform: scale(0.85);color: #686868}
+}
+
+/* SCROLL DOWN */
+.scrolldown {left: 50%;position: absolute;text-align: center;bottom: 0;transform: translate(-50%, -50%);border: 2px solid white;border-radius: 30px;height: 46px;margin: 0 auto 8px;text-align: center;width: 30px;}
+.scrolldown-p1,.scrolldown-p2 {animation-duration: 1.5s;animation-name: scrolldown;animation-iteration-count: infinite;fill: white;}
+.scrolldown-p2 {animation-delay: .75s;}
+@keyframes scrolldown {0% {opacity: 0;transform: translate(0, -8px);}50% {opacity: 1;transform: translate(0, 0);}100% {opacity: 0;transform: translate(0, 8px);}}
+
+/* MAIN */
+.about{background-position: center;background-size: cover; background-image: url("img/barbershop.jpg"); height:100%; min-height: 100%;background-position: center;background-repeat: no-repeat;background-attachment: fixed;}
+.middle {position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);text-align: center;font-size: clamp(3rem, 4vw, 7rem);color: white;}
+.title{text-align: center; padding-top: 200px;}
+
+/* CARDS */
+.table {padding-top: 80px;display: flex;flex-wrap: wrap;justify-content: space-around;margin: 20px;}
+.card {border-radius: 5px;box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);margin: 10px;padding: 20px;width: calc(33.33% - 210px);}
+.card:hover {box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);}
+.card img {max-width: 100%;height: auto;}
+@media screen and (max-width: 768px) {.card {width: calc(50% - 20px);}}
+@media screen and (max-width: 480px) {.card {width: 100%;}}
+
+/* GALLERY */
+.gallery {display: grid;grid-template-columns: repeat(4, 1fr);gap: 10px;max-width: 1200px;width: 100%;background-color: black;box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);margin: auto;}
+.gallery img {width: 100%;height: auto;transition: all 0.5s ease-in-out;}
+.gallery img:hover {filter: brightness(70%);}
+@media (max-width: 1000px) {.gallery {grid-template-columns: repeat(2, 1fr);}}
+@media (max-width: 480px) {.gallery {grid-template-columns: 1fr;}}
+
+/* PRICING */
+.bulleted-list ul {list-style-type: none;padding: 0;margin: 0;background-color: #333;border-radius: 10px;box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);overflow: hidden;}
+.bulleted-list li {padding: 15px 20px;border-bottom: 1px solid #444;color: #fff;font-size: 18px;transition: background-color 0.3s;}
+.bulleted-list li:last-child {border-bottom: none;}
+.bulleted-list li:hover {background-color: #444;}
+
+/* UP BTN */
+#upBtn {display: none;position: fixed;bottom: 20px;right: 30px;z-index: 99;border: none;outline: none;background-color: transparent;cursor: pointer;padding: 15px;border-radius: 10px;height: 4rem;width: 4rem;}
+#upBtn:hover {background-color: rgba(179, 179, 179, 0.333);}
+.btnImg {display: block;margin-left: auto;margin-right: auto;width: 100%;}
+
+/* FOOTER */
+footer{background-color: black; height: 45vh; left: 0; width: 100%; position: absolute;}
+.footerinfos{width: 400px; height: 255px; margin: auto; color: white;}

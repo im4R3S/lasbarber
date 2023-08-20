@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>LAS Barber</title>
+        <link rel="stylesheet" href="style.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="shortcut icon" type="image/png" href=""/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://im4R3S.github.io/lasbarber/">
+        <meta property="og:title" content="Arès | Personal website">
+        <meta property="og:description" content="Personal website of Arès, containing various informations about him.">
+        <meta property="og:image" content="img/img.png" href="">
+    </head>
+<body>
+    <header class="header">
+        <!--<a href="" class="logo"><img src="img/" alt="logo"></a>-->
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="#accueil" title="Accueil">Accueil</a></li>
+            <li><a href="#equipe" title="A propos de nous">A propos de nous</a></li>
+            <li><a href="#tarifs" title="Horaire & Tarifs">Horaires & Tarifs</a></li>
+            <li><a href="" title="Réservation">Réservation</a></li>
+        </ul>
+    </header>
+    <main>
+        <section id="accueil" class="about">
+            <div class="middle">
+                <h1>LAS Barber</h1>
+            </div>
+            <div class="scrolldown">
+                <svg height="30" width="10">
+                    <circle class="scrolldown-p1" cx="5" cy="15" r="2" />
+                    <circle class="scrolldown-p2" cx="5" cy="15" r="2" />
+                </svg>
+            </div>
+        </section>
+        <section id="equipe">
+            <h1 class="title">L'équipe LAS Barber</h1>
+            <div class="table">
+                <div class="card">
+                  <img src="img/barbershop.jpg" alt="Card 1">
+                  <h2>Arlind Jashari</h2>
+                  <p>Coiffeur</p>
+                </div>
+                <div class="card">
+                    <img src="img/barbershop.jpg" alt="Card 1">
+                    <h2>Coiffeur 1</h2>
+                    <p>Coiffeur</p>
+                </div>
+                <div class="card">
+                    <img src="img/barbershop.jpg" alt="Card 1">
+                    <h2>Coiffeur 2</h2>
+                    <p>Coiffeur</p>
+                </div>
+            </div>
+        </section>
+        <section id="gallerie" style="background-color: black;">
+            <div style="height: 30vh;"></div>
+            <div class="gallery">
+                <img src="img/barbershop.jpg" alt="Image 1">
+                <img src="img/barbershop.jpg" alt="Image 2">
+                <img src="img/barbershop.jpg" alt="Image 3">
+                <img src="img/barbershop.jpg" alt="Image 4">
+                <img src="img/barbershop.jpg" alt="Image 5">
+                <img src="img/barbershop.jpg" alt="Image 6">
+                <img src="img/barbershop.jpg" alt="Image 7">
+                <img src="img/barbershop.jpg" alt="Image 8">
+              </div>
+        </section>
+        <section id="tarifs">
+            <h1 class="title">Horaires & Tarifs</h1>
+            <div class="bulleted-list" style="margin: auto; width: 300px;">
+                <ul>
+                    <li>Coupe (Adulte) : 30 CHF</li>
+                    <li>Coupe + Barbe (Adulte) : 40 CHF</li>
+                    <li>Coupe (Etudiant) : 28 CHF</li>
+                    <li>Coupe + Barbe (Etudiant) : 40 CHF</li>
+                    <li>Soin du visage : 20 CHF</li>
+                    <li>Shampoing : 8 CHF</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <table style="width:100%; height:45vh;">
+            <tr>
+                <td>
+                <p style="text-align: center;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d432.7819273890967!2d6.60575245112216!3d46.53436228432144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c31c3bf5e70a5%3A0x1a130184f603cbe7!2sRte%20de%20Cossonay%2028%2C%201008%20Prilly!5e1!3m2!1sfr!2sch!4v1692548659578!5m2!1sfr!2sch" width="400" height="250" margin="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </p>
+                </td>
+                <td>
+                <div class="footerinfos">
+                    <div style="height: 1vh;"></div>
+                    <ul style="list-style: none;">
+                        <h2>LAS Barber</h2>
+                        <li>
+                            <p>Prilly, Switzerland</p>
+                        </li>
+                        <li>
+                            <p>Arlind Jashari: +41 77 812 88 34</p>
+                        </li>
+                        <li>
+                            <p>
+                                ©
+                                <span id="copyright">
+                                    <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+                                </span>
+                                LAS Barber. All rights reserved.
+                            </p>
+                        </li>
+                        <li>
+                            <a class="underline" href="policy.html">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                </td>
+            </tr>
+        </table>
+    </footer>
+    <button onclick="upFunction()" id="upBtn" title="Up"><img class="btnImg" src="img/up.png" alt="Remonter"></button>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Coming Soon</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" type="image/png" href=""/>
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+      body, html {height: 100%;margin: 0; background-color: black;}
+      .bgimg {background-image: url('img/');height: 100%;background-position: center;background-size: cover;position: relative;color: white;font-family: 'Poppins';font-size: 25px;}
+      input:focus {outline: none !important;}
+      .topleft {position: absolute;left: 25px;}
+      .topright {position: absolute;top: 20px; right: 0px;color: white;}
+      .psw{background-color:transparent;border: none;color: white;}
+      .middle {position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);text-align: center;}
+      hr {margin: auto;width: 40%;}
+    </style>
+    <body>
+    <div class="bgimg">
+      <div class="topleft">
+        <p>LAS Barber</p>
+      </div>
+      <div class="middle">
+        <h1>COMING SOON</h1>
+      </div>
+      <div class="topright" style="width: 80px;">
+        <input class="psw"  style="width: 80px;" placeholder="Password" type="password" name="password" required="" id="password" onkeyup="if(this.value.length >= 3) login()">
+      </div>
+    </div>
+    <script>
+    function login(){
+        password = document.getElementById("password").value;
+        if(password == "psw"){
+            window.location.href = "home.html";
+        }else{
+            alert("Mot de passe incorrect !")
+        }
+    }
+    </script>
+    </body>
+</html>
