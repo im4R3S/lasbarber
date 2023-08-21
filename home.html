@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>LAS Barber</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="shortcut icon" type="image/png" href=""/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,7 +29,7 @@
     <main>
         <section id="accueil" class="about">
             <div class="middle">
-                <h1>LAS Barber</h1>
+                <h3>LAS Barber</h3>
             </div>
             <div class="scrolldown">
                 <svg height="30" width="10">
@@ -37,7 +38,7 @@
                 </svg>
             </div>
         </section>
-        <section id="equipe" style="height:50vh !important;background-color: #101418; color:white;">
+        <section id="equipe" style="height:50vh !important; background-color: #101418; color:white;">
             <h1 class="title" style="padding-top:10vh !important; margin:0 !important;">L'équipe LAS Barber</h1>
             <div class="table" style="padding-top:40px;">
                 <div class="card">
@@ -58,7 +59,6 @@
             </div>
         </section>
         <section id="gallerie" style="height:50vh !important; background-color: black;">
-            <div style="height: 10vh;"></div>
             <div class="gallery">
                 <img src="img/barbershop.jpg" alt="Image 1">
                 <img src="img/barbershop.jpg" alt="Image 2">
@@ -68,7 +68,7 @@
                 <img src="img/barbershop.jpg" alt="Image 6">
                 <img src="img/barbershop.jpg" alt="Image 7">
                 <img src="img/barbershop.jpg" alt="Image 8">
-              </div>
+            </div>
         </section>
         <section id="tarifs" style="background-color: #101418;">
             <div style="height: 10vh;"></div>
@@ -93,36 +93,31 @@
             </div>
             <h1 style="color: white; text-align: center; padding-top: 5vh;">Où nous trouver</h1>
             <p style="text-align: center;">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2744.652043571075!2d6.604072588237847!3d46.53478688031194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c31c3bf5e70a5%3A0x1a130184f603cbe7!2sRte%20de%20Cossonay%2028%2C%201008%20Prilly!5e0!3m2!1sfr!2sch!4v1692604478405!5m2!1sfr!2sch" width="1200" height="600" margin="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2744.652043571075!2d6.604072588237847!3d46.53478688031194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c31c3bf5e70a5%3A0x1a130184f603cbe7!2sRte%20de%20Cossonay%2028%2C%201008%20Prilly!5e0!3m2!1sfr!2sch!4v1692604478405!5m2!1sfr!2sch" width="75%" height="250px" margin="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </p>
         </section>
     </main>
-    <footer id="footer">
-        <div style="height: 5vh;"></div>
-        <div class="footerinfos">
-            <ul style="list-style: none;">
-                <h2>LAS Barber</h2>
-                <li>
-                    <p>Prilly, Switzerland</p>
-                </li>
-                <li>
-                    <p>Contact: +41 77 812 88 34</p>
-                </li>
-                <li>
-                    <p>
-                        ©
-                        <span id="copyright">
-                            <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
-                        </span>
-                        LAS Barber. All rights reserved.
-                    </p>
-                </li>
-                <li>
-                    <a class="underline" href="policy.html">Privacy Policy</a>
-                </li>
+    <div class="footer-basic">
+        <footer>
+            <div class="social" style="padding: 0;">
+                <a href="https://www.instagram.com/las.barber/" target="_blank">
+                    <i class="icon ion-social-instagram"></i>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="icon ion-social-snapchat"></i>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="icon ion-social-twitter"></i>
+                </a>
+            </div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a onclick="upFunction()">Accueil</a></li>
+                <li class="list-inline-item"><a href="policy.html">Privacy Policy</a></li>
+                <li class="list-inline-item"><a href="https://booking.localsearch.ch/bookings/webcustom/services?locale=fr" target="_blank">Réserver</a></li>
             </ul>
-        </div>
-    </footer>
+            <p class="copyright">LAS Barber © 2023</p>
+        </footer>
+    </div>
     <button onclick="upFunction()" id="upBtn" title="Up"><img class="btnImg" src="img/up.png" alt="Remonter"></button>
     <script src="script.js"></script>
 </body>

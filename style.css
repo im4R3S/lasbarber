@@ -5,6 +5,7 @@ section{height: 100vh; width: 100%;}
 /* UTILS */
 section{height: 100vh !important;}
 .underline {box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);text-decoration: none;color: white;}
+.list-inline-item{display:inline-block}
 
 /* HEADER */
 .header {background-color: black; box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1); width: 100%; position: fixed; z-index: 1;}
@@ -15,8 +16,8 @@ section{height: 100vh !important;}
 /* NAVBAR */
 .header .menu {clear: both;max-height: 0;transition: max-height .2s ease-out;}
 .header .menu-icon {cursor: pointer;display: inline-block;float: right;padding: 28px 20px;position: relative;user-select: none;}
-.header .menu-icon .navicon {background: black;display: block;height: 2px;position: relative;transition: background .2s ease-out;width: 18px;}
-.header .menu-icon .navicon:before,.header .menu-icon .navicon:after {background: black;content: '';display: block;height: 100%;position: absolute;transition: all .2s ease-out;width: 100%;}
+.header .menu-icon .navicon {background: white;display: block;height: 2px;position: relative;transition: background .2s ease-out;width: 18px;}
+.header .menu-icon .navicon:before,.header .menu-icon .navicon:after {background: white;content: '';display: block;height: 100%;position: absolute;transition: all .2s ease-out;width: 100%;}
 .header .menu-icon .navicon:before {top: 5px;}
 .header .menu-icon .navicon:after {top: -5px;}
 .header .menu-btn {display: none;}
@@ -46,14 +47,14 @@ section{height: 100vh !important;}
 
 /* CARDS */
 .table {padding-top: 80px;display: flex;flex-wrap: wrap;justify-content: space-around;margin: 20px;}
-.card {border-radius: 5px;box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);margin: 10px;padding: 20px;width: calc(33.33% - 210px);transition: all 0.5s ease-in-out;}
+.card {border-radius: 5px;box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);margin: 10px;padding: 20px;width: calc(33.33% - 210px); height: 200px; transition: all 0.5s ease-in-out;}
 .card:hover {box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);}
 .card img {max-width: 100%;height: auto;}
 @media screen and (max-width: 768px) {.card {width: calc(50% - 20px);}}
 @media screen and (max-width: 480px) {.card {width: 100%;}}
 
 /* GALLERY */
-.gallery {display: grid;grid-template-columns: repeat(4, 1fr);gap: 10px;max-width: 1200px;width: 100%;background-color: black;box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);margin: auto;}
+.gallery {display: grid; grid-template-columns: repeat(4, 1fr);gap: 10px;max-width: 1200px;width: 50%;background-color: black;box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);margin: auto; padding-top: 5%;}
 .gallery img {width: 100%;height: auto;transition: all 0.5s ease-in-out;}
 .gallery img:hover {filter: brightness(70%);}
 @media (max-width: 1000px) {.gallery {grid-template-columns: repeat(2, 1fr);}}
@@ -72,5 +73,62 @@ section{height: 100vh !important;}
 .btnImg {display: block;margin-left: auto;margin-right: auto;width: 100%;}
 
 /* FOOTER */
-footer{background-color: black; height: 25vh; left: 0; width: 100%; position: absolute;}
-.footerinfos{width: 400px; height: 230px; margin: auto; color: white;text-align: center;}
+.footer-basic {
+    padding:40px 0;
+    background-color:black;
+    color:white;
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+  }
