@@ -9,7 +9,7 @@ section{height: 100vh !important;}
 /* HEADER */
 .header {background-color: black; box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1); width: 100%; position: fixed; z-index: 1;}
 .header ul {margin: 0;padding: 0;list-style: none;overflow: hidden;background-color: black;}
-.header li a {display: block;padding: 15px 15px;text-decoration: none;color: black;transition: 0.3s;}
+.header li a {display: block;padding: 15px 15px;text-decoration: none;color: white;transition: 0.3s;}
 .header li a:hover,.header .menu-btn:hover {color: #686868}
 
 /* NAVBAR */
