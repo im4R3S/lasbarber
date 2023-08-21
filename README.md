@@ -15,7 +15,7 @@ Deadline : lundi 5 septembre 2023 à 9h30
 - [ ] Vérifier si le site est valide W3C.
 
 ## Utilisation
-[Lien du projet]([https://im](https://im4r3s.github.io/lasbarber/))
+[Lien du projet](https://im4R3s.github.io/lasbarber/)
 
 ## Contribution
 Ce projet est privée merci de ne rien modifier.
