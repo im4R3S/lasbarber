@@ -1,9 +1,8 @@
 /* GENERAL */
 body, html {scroll-behavior: smooth !important;box-sizing:border-box;width: 100%;font-family: "Nunito", sans-serif!important;background-color: white !important;color:black!important;margin:0;}
-section{height: 100vh; width: 100%;}
 
 /* UTILS */
-section{height: 100vh !important;}
+section{ height: 100vh;max-height: 100%;max-width: 100%;}
 .underline {box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);text-decoration: none;color: white;}
 .list-inline-item{display:inline-block}
 
@@ -31,7 +30,7 @@ section{height: 100vh !important;}
     .header li a {padding: 20px 25px;}
     .header .menu {clear: none;float: right;max-height: none;}
     .header .menu-icon {display: none;}
-    .header li a:hover,.header .menu-btn:hover {transform: scale(0.85);color: #686868}
+    .header li a:hover,.header .menu-btn:hover {color: #686868}
 }
 
 /* SCROLL DOWN */
@@ -41,7 +40,7 @@ section{height: 100vh !important;}
 @keyframes scrolldown {0% {opacity: 0;transform: translate(0, -8px);}50% {opacity: 1;transform: translate(0, 0);}100% {opacity: 0;transform: translate(0, 8px);}}
 
 /* MAIN */
-.about{background-position: center;background-size: cover; background-image: url("img/barbershop.jpg"); height:100%; min-height: 100%;background-position: center;background-repeat: no-repeat;background-attachment: fixed;}
+.accueil{background-position: center;background-size: cover; background-image: url("img/barbershop.jpg");background-position: center;background-repeat: no-repeat;background-attachment: fixed;}
 .middle {position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);text-align: center;font-size: clamp(3rem, 4vw, 7rem);color: white;}
 .title{text-align: center; padding-top: 25vh;}
 
@@ -60,12 +59,17 @@ section{height: 100vh !important;}
 @media (max-width: 1000px) {.gallery {grid-template-columns: repeat(2, 1fr);}}
 @media (max-width: 480px) {.gallery {grid-template-columns: 1fr;}}
 
-/* PRICING */
+/* HORAIRES */
 .bulleted-list ul {list-style-type: none;padding: 0;margin: 0;background-color: transparent;border-radius: 10px;box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);overflow: hidden;}
 .bulleted-list li {padding: 15px 20px;border-bottom: 1px solid #444;color: #fff;font-size: 18px;transition: background-color 0.3s;}
 .bulleted-list li:last-child {border-bottom: none;}
-.infos {display: grid;grid-template-columns: repeat(2, 1fr);gap: 10px;max-width: 1200px;width: 100%;box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);margin: auto; text-align: center;}
-@media (max-width: 800px) {.infos {grid-template-columns: 1fr;}}
+.infos {display: grid;gap: 10px;max-width: 1200px;width: 100%;box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);margin: auto; text-align: center;}
+
+/* BOUTON RESERVER */
+.button {background-color: transparent;border: none;color: white;padding: 15px 32px;text-decoration: none;display: inline-block;font-size: 16px;transition-duration: 0.3s;}
+.button2 {border: 2px solid white;text-align: center;}
+.button:hover {background-color: white;color: black;}
+.center {padding-top: 15vh; margin: 0;position: absolute;left: 50%;-ms-transform: translate(-50%, -50%);transform: translate(-50%, -50%);}
 
 /* UP BTN */
 #upBtn {display: none;position: fixed;bottom: 20px;right: 30px;z-index: 99;border: none;outline: none;background-color: transparent;cursor: pointer;padding: 15px;border-radius: 10px;height: 4rem;width: 4rem;}
@@ -73,59 +77,12 @@ section{height: 100vh !important;}
 .btnImg {display: block;margin-left: auto;margin-right: auto;width: 100%;}
 
 /* FOOTER */
-.footer-basic {
-    padding:40px 0;
-    background-color:black;
-    color:white;
-  }
-  
-  .footer-basic ul {
-    padding:0;
-    list-style:none;
-    text-align:center;
-    font-size:18px;
-    line-height:1.6;
-    margin-bottom:0;
-  }
-  
-  .footer-basic li {
-    padding:0 10px;
-  }
-  
-  .footer-basic ul a {
-    color:inherit;  
-    text-decoration:none;
-    opacity:0.8;
-  }
-  
-  .footer-basic ul a:hover {
-    opacity:1;
-  }
-  
-  .footer-basic .social {
-    text-align:center;
-    padding-bottom:25px;
-  }
-  
-  .footer-basic .social > a {
-    font-size:24px;
-    width:40px;
-    height:40px;
-    line-height:40px;
-    display:inline-block;
-    text-align:center;
-    margin:0 8px;
-    color:inherit;
-  }
-  
-  .footer-basic .social > a:hover {
-    opacity:0.9;
-  }
-  
-  .footer-basic .copyright {
-    margin-top:15px;
-    text-align:center;
-    font-size:13px;
-    color:#aaa;
-    margin-bottom:0;
-  }
+.footer-basic {padding:40px 0;background-color:black;color:white;}
+.footer-basic ul {padding:0;list-style:none;text-align:center;font-size:18px;line-height:1.6;margin-bottom:0;}
+.footer-basic li {padding:0 10px;}
+.footer-basic ul a {color:inherit;text-decoration:none;}
+.footer-basic ul a:hover {color: #686868}
+.footer-basic .social {text-align:center;padding-bottom:25px;}
+.footer-basic .social > a {font-size:24px;width:40px;height:40px;line-height:40px;display:inline-block;text-align:center;margin:0 8px;color:inherit;}
+.footer-basic .social > a:hover {color: #686868}  
+.footer-basic .copyright {margin-top:15px;text-align:center;font-size:13px;margin-bottom:0;}
